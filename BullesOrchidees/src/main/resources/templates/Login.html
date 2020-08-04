@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+
+<!--Import Google Icon Font-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet">
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<script src="https://kit.fontawesome.com/2dd931e327.js"
+	crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+<title>Login Page</title>
+</head>
+<body>
+
+	<header>
+		<nav class="nav-wrapper indigo ">
+			<div id="navbar" class="container ">
+				<a href="/" class="brand-logo"> <img src="/img/woyo_logo.png"
+					width="200" height="auto"></a> <a href="#"
+					class="sidenav-trigger" data-target="mobile-menu"> <i
+					class="material-icons">menu</i>
+				</a>
+
+
+				<ul id="Services" class="dropdown-content grey darken-4 ">
+					<li><a href="services/event-weddingPlanner">Events &
+							Wedding Planner</a></li>
+					<li class="divider"></li>
+					<li><a href="services/service-chictradi">Mariage
+							Traditionnel</a></li>
+					<li><a href="services/mariage-civil">Mariage Civil</a></li>
+					<li class="divider"></li>
+					<li><a href="services/corporate-events">Corporate Events</a></li>
+					<li><a href="services/private-events">Private Events</a></li>
+					<li class="divider"></li>
+					<li><a href="services/location-materiel">Location Materiel</a></li>
+				</ul>
+
+				<ul id="sidenav-Services" class="dropdown-content indigo darken-4 ">
+					<li><a href="services/event-weddingPlanner">Events &
+							Wedding Planner</a></li>
+					<li class="divider"></li>
+					<li><a href="services/service-chictradi">Mariage
+							Traditionnel</a></li>
+					<li><a href="services/mariage-civil">Mariage Civil</a></li>
+					<li class="divider"></li>
+					<li><a href="services/corporate-events">Corporate Events</a></li>
+					<li><a href="services/private-events">Private Events</a></li>
+					<li class="divider"></li>
+					<li><a href="services/location-materiel">Location
+							materialboxed</a></li>
+				</ul>
+
+				<ul class="right hide-on-med-and-down ">
+					<li><a class="active-link" href="/">Accueil</a></li>
+					<li><a class="dropdown-trigger" href="#!"
+						data-target="Services">Services<i class="material-icons right">arrow_drop_down</i></a></li>
+					<li><a href="#contact">Contact</a></li>
+					<li><a href="loginUser" class="btn purple modal-trigger">INVITES</a></li>
+
+					<li><a href="https://www.instagram.com/bullesorch/"
+						class="tooltipped btn-floating btn-small green darken-4 pulse"
+						data-position="bottom" data-tooltip="Instagram"> <i
+							class="fab fa-instagram"></i>
+					</a></li>
+					<li><a href="https://www.facebook.com/BullesOrchidees"
+						class="tooltipped btn-floating btn-small pink darken-4 pulse"
+						data-position="bottom" data-tooltip="Facebook"> <i
+							class="fab fa-facebook"></i>
+					</a></li>
+					<li><a href="#"
+						class="tooltipped btn-floating btn-small orange darken-4 pulse"
+						data-position="bottom" data-tooltip="Twitter"> <i
+							class="fab fa-twitter"></i>
+					</a></li>
+
+				</ul>
+				<ul class="sidenav" id="mobile-menu">
+					<h4 class="purple-text text-darken-4 center">Bienvenue</h4>
+					<li>
+						<div class="divider"></div>
+					</li>
+					<li><a href="index.html"> <i
+							class="fa fa-home grey-text text-darken-4"></i> Accueil
+					</a></li>
+					<li><a href="#" data-target="sidenav-Services"
+						class="dropdown-trigger"> <i
+							class="fa fa-cog grey-text text-darken-4"></i> Services
+					</a></li>
+					<li><a href="#contact"> <i
+							class="fa fa-edit grey-text text-darken-4"></i> Contact
+					</a></li>
+					<li>
+						<div class="divider"></div>
+					</li>
+					<li><a href="login" class="btn purple">INVITES</a></li>
+				</ul>
+
+			</div>
+		</nav>
+	</header>
+
+	<!-- Section: Login Form -->
+
+
+
+
+	<!-- Section: Contact -->
+	<section id="login" class="section section-login center scrollspy">
+		<div id="login"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col s12 m6 offset-m2">
+					<h5>Login</h5>
+					<div class="card-panel z-depth-5">
+						<form action="#" th:action="@{/loginUser}" method="post">
+							<div>
+								<label>Email:</label> <input type="text" name="email" />
+							</div>
+							<div>
+								<label>Password:</label> <input type="text" name="password" />
+							</div>
+							<div>
+								<input type="submit" value="Login" />
+							</div>
+						</form>
+						<a href="/newUserForm">Register Here</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
+
+
+
+	<!-- Section: Slider -->
+	<section class="slider">
+		<ul class="slides">
+			<li><img src="/img/civil.jpg" alt="">
+				<div class="caption center-align">
+					<h2 class="green-text text-darken-4">Wedding a la Francaise</h2>
+					<h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem
+						ipsum dolor sit amet consectetur adipisicing elit. Veniam non illo
+						earum cumque id est!</h5>
+					<a href="https://www.instagram.com/bullesorch/"
+						class="btn btn-large">Voir +</a>
+				</div></li>
+			<li><img src="/img/3.jpg" alt="">
+				<div class="caption left-align">
+					<h2>Eco-Floristry</h2>
+					<h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem
+						ipsum dolor sit amet consectetur adipisicing elit. Veniam non illo
+						earum cumque id est!</h5>
+					<a href="https://www.instagram.com/bullesorch/"
+						class="btn btn-large">Voir +</a>
+				</div></li>
+			<li><img src="/img/7.jpg" alt="">
+				<div class="caption right-align">
+					<h2 class="green-text text-darken-3">TradiChic Events...</h2>
+					<h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem
+						ipsum dolor sit amet consectetur adipisicing elit. Veniam non illo
+						earum cumque id est!</h5>
+					<a href="https://www.instagram.com/bullesorch/"
+						class="btn btn-large">Voir +</a>
+				</div></li>
+			<li><img src="/img/13.jpg" alt="">
+				<div class="caption right-align">
+					<h2 class="pink-text text-darken-5">Deco Sur Mesure...</h2>
+					<h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem
+						ipsum dolor sit amet consectetur adipisicing elit. Veniam non illo
+						earum cumque id est!</h5>
+					<a href="https://www.instagram.com/bullesorch/"
+						class="btn btn-large">Voir +</a>
+				</div></li>
+		</ul>
+	</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+	<script src="http://maps.googleapis.com/maps/api/js"></script>
+
+	<script>
+		$(".dropdown-trigger").dropdown();
+
+		$(document)
+				.ready(
+						function() {
+
+							$('.sidenav').sidenav();
+							$('.materialboxed').materialbox();
+							$('.parallax').parallax();
+							$('.tooltipped').tooltip();
+							$('.scrollspy').scrollSpy();
+							$('.modal').modal();
+
+							// Slider
+							const slider = document.querySelector('.slider');
+							M.Slider.init(slider, {
+								indicators : false,
+								height : 650,
+								transition : 500,
+								interval : 6000
+							});
+
+							const position = [ 0.401867, 9.437452 ];
+							const centerPosition = [ 0.401867, 9.447452 ];
+
+							function showGoogleMaps() {
+								// Map positions
+								const latLng = new google.maps.LatLng(
+										position[0], position[1]);
+								const centerLatLng = new google.maps.LatLng(
+										centerPosition[0], centerPosition[1]);
+
+								// Map options
+								const mapOptions = {
+									zoom : 15,
+									streetViewControl : false,
+									scaleControl : true,
+									mapTypeId : google.maps.MapTypeId.ROADMAP,
+									center : centerLatLng
+								}
+
+								// Create map
+								map = new google.maps.Map(document
+										.getElementById('googlemap'),
+										mapOptions);
+
+								// Show Marker
+								marker = new google.maps.Marker({
+
+									position : latLng,
+									map : map,
+									draggable : false,
+									/* icon:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',*/
+									animation : google.maps.Animation.BOUNCE
+								});
+
+								var infoWindow = new google.maps.InfoWindow(
+										{
+											content : '<h5>Bulles & Orchidees</h5><h6>Ouvert: Lun-vend (8h-15h)</h6><span>Phone:+241 07.30.30.30</span> <h6><a  class="btn-small indigo lighten-1" href="https://www.google.com/maps/dir//CKDO,+Libreville,+Gabon/@0.4587592,9.4064594,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x107f25ffaa17b5b5:0xbe5b307b51fe5248!2m2!1d9.4086481!2d0.4587538">Direction</h6></a>'
+										});
+								//   <a href="#login-modal" class="btn purple">INVITES</a>
+
+								marker.addListener('click', function() {
+									infoWindow.open(map, marker);
+								});
+							}
+
+							// Maps event
+							google.maps.event.addDomListener(window, 'load',
+									showGoogleMaps);
+						});
+	</script>
+
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuk5E8A8KpqM6xgSmyqVgQ4fZ2_h3wXUY&callback=initMap"
+		async defer></script>
+
+
+
+
+</body>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+
+</html>
