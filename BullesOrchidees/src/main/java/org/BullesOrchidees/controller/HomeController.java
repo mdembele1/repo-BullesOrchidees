@@ -22,7 +22,7 @@ public class HomeController {
 	
 	@GetMapping("/")
 	public String showIndexPage() {
-		return "redirect:/homePage";
+		return "redirect:/index";
 	}
 	
 	@GetMapping("/loginUser")
