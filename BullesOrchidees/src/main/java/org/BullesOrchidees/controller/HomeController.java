@@ -36,6 +36,11 @@ public class HomeController {
 		session.setAttribute("currentUser", user);
 		return "redirect:/HomePageFilter";
 	}
+	@GetMapping("/index")
+	public String showindexPage() {
+		return "index";
+	}
+	
 	
 	@GetMapping("/homePage")
 	public String showHomePage() {
