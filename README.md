@@ -1,2 +1,2 @@
-# repo-BullesOrchidees
+# Repo-BullesOrchidees
 Wedding planner website
